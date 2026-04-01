@@ -1,0 +1,39 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "rootDir": "./",
+    "allowImportingTsExtensions": false,
+    "noEmit": false,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "strict": true
+  },
+  "include": [
+    "server.ts",
+    "src/app.ts",
+    "src/config/**/*",
+    "src/controllers/**/*",
+    "src/data/**/*",
+    "src/middlewares/**/*",
+    "src/routes/**/*",
+    "src/services/**/*",
+    "src/types/**/*",
+    "src/utils/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "src/**/*.test.ts",
+    "src/**/*.spec.ts",
+    "src/**/*.tsx",
+    "src/pages/**/*",
+    "src/contexts/**/*",
+    "src/components/**/*"
+  ]
+}
